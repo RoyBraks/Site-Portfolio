@@ -15,6 +15,23 @@ body{
     float: left;
 }
 
+.homepagemain{
+    display: flex;
+    gap: 5%;
+    flex-wrap: nowrap;
+    margin-top: 15%;
+}
+
+.maintext{
+    margin-left: 7%;
+    width: 50%;
+    font-size: 3em;
+}
+
+.mainimg{
+    width: 50%;
+}
+
 .navbar{
     display: flex;
     flex-wrap: wrap;
