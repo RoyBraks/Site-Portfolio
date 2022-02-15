@@ -6,12 +6,28 @@
 body{
     font-family: Franklin Gothic Book;
     color: #BBBBBB;
+    background-color: #181818;
     background-image: linear-gradient(to right bottom, #121212, #262626);
+    background-repeat: no-repeat;
     margin: 0 auto;
+    overflow-x: hidden;
+}
+
+.arrow{
+    position: absolute;
+}
+.arrowtop{
+    width: 50px;
+}
+.arrowbottom{
+    width: 50px;
+}
+.blue{
+    color: #00C7FB;
 }
 
 .homebutton{
-    width: 80;
+    width: 80px;
     float: left;
 }
 
@@ -19,17 +35,22 @@ body{
     display: flex;
     gap: 5%;
     flex-wrap: nowrap;
-    margin-top: 15%;
 }
 
 .maintext{
     margin-left: 7%;
     width: 50%;
-    font-size: 3em;
+    font-size: calc(3rem + 1.5vw);
+    margin-top: 15vw;
 }
 
 .mainimg{
-    width: 50%;
+    width: 28%;
+    margin-top: 4vw;
+}
+
+.mainimgsrc{
+    width: 800px;
 }
 
 .navbar{
@@ -54,10 +75,51 @@ body{
     color: #BBBBBB;
     text-decoration: none;
     text-transform: uppercase;
+    transition: 0.15s;
 }
 
 .navbartext:hover{
+    transition: 0.15s;
     color: #00C7FB;
+}
+
+.pagebuttons{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    gap: 4em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pagebuttonsbutton{
+    background-image: linear-gradient(to left top, #121212, #262626);
+	color: #BBBBBB;
+	border: 3%;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 0.3rem;
+    width: 14em;
+	padding: 2.6em 1.5em;
+	font: inherit;
+    cursor: pointer;
+}
+
+.pagebuttonsbutton:hover{
+    background-image: linear-gradient(to right bottom, #121212, #262626);
+    color: #00C7FB;
+    border-color: #00C7FB;
+    box-shadow: 0px 0px 8px 1px #00C7FB;
+}
+
+.pagebuttonstext{
+    font: inherit;
+    font-size: 3em;
+    color: #BBBBBB;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .uppercase{
