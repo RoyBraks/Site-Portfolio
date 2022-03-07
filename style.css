@@ -190,8 +190,18 @@ body{
     text-transform: uppercase;
 }
 
+.documenttitle{
+    text-align: center;
+    width: 100%;
+    font-size: calc(3rem + 1.5vw);
+}
+
+.eindresultaat{
+    width: 100%;
+    text-align: center;
+}
 .textdocumentatie{
-    margin: 0 8%;
+    margin: 0 8% 8% 8%;
 }
 .textblock{
     margin-top: 5em;
@@ -205,6 +215,8 @@ body{
     color: inherit;
     font-size: large;
     width: 50%;
+    float: left;
+    text-align: justify;
 }
 .uppercase{
     text-transform: uppercase;
