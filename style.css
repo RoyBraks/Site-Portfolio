@@ -13,17 +13,38 @@ body{
     overflow-x: hidden;
 }
 
+.arrowmain
+{
+    display: flex;
+    justify-content: center;
+}
 .arrow{
+    margin-top: -20vh;
     position: absolute;
 }
 .arrowtop{
     width: 50px;
+    position: absolute;
+    margin-top: -10px;
+    animation: arrowmov 750ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes arrowmov {
+    0% {margin-top: -17px;}
+    100% {margin-top: -10px}
 }
 .arrowbottom{
     width: 50px;
 }
 .blue{
     color: #00C7FB;
+}
+
+.flex{
+    display: flex;
+    gap: 4em;
 }
 
 .homebutton{
@@ -50,7 +71,7 @@ body{
 }
 
 .mainimgsrc{
-    width: 800px;
+    width: 600px;
 }
 
 .navbar{
@@ -93,6 +114,14 @@ body{
     align-content: center;
 }
 
+.pagebuttons2{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    gap: 4em;
+    flex-wrap: wrap;
+}
+
 .pagebuttonsbutton{
     background-image: linear-gradient(to left top, #121212, #262626);
 	color: #BBBBBB;
@@ -107,11 +136,42 @@ body{
     cursor: pointer;
 }
 
+.pagebuttonsbutton2{
+	border: 3%;
+    color: #BBBBBB;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 0.3rem;
+    padding: 1.5em 70vw 1.5em 1em;
+	font: inherit;
+    cursor: pointer;
+    margin-left: 10%;
+}
 .pagebuttonsbutton:hover{
     background-image: linear-gradient(to right bottom, #121212, #262626);
     color: #00C7FB;
     border-color: #00C7FB;
     box-shadow: 0px 0px 8px 1px #00C7FB;
+}
+.pagebuttonsbutton2:hover{
+    background-size: 150%;
+    animation: backgroundmov 6s infinite alternate;
+    color: #00C7FB;
+    border-color: #00C7FB;
+    box-shadow: 0px 0px 8px 1px #00C7FB;
+}
+
+.poster
+{
+    background-image: url(images/posterbanner.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+@keyframes backgroundmov {
+    0% {background-position-x: -10vw;}
+    100% {background-position-x: -20vw;}
 }
 
 .pagebuttonstext{
@@ -122,6 +182,30 @@ body{
     text-transform: uppercase;
 }
 
+.pagebuttonstext2{
+    font: inherit;
+    font-size: 3em;
+    color: #BBBBBB;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.textdocumentatie{
+    margin: 0 8%;
+}
+.textblock{
+    margin-top: 5em;
+}
+
+.textimg{
+    width: 50%;
+}
+
+.texttext{
+    color: inherit;
+    font-size: large;
+    width: 50%;
+}
 .uppercase{
     text-transform: uppercase;
 }
