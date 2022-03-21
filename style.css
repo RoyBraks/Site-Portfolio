@@ -3,6 +3,15 @@
     src: url(fonts/Franklin\ Gothic\ Book\ Regular.ttf);
 }
 
+*{
+    list-style: none;
+    text-decoration: none;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
 body{
     font-family: Franklin Gothic Book;
     color: #BBBBBB;
@@ -13,6 +22,16 @@ body{
     overflow-x: hidden;
 }
 
+.blue{
+    color: #00C7FB;
+}
+
+.flex{
+    display: flex;
+    gap: 4em;
+}
+
+/* HomePage */
 .arrowmain
 {
     display: flex;
@@ -30,21 +49,13 @@ body{
     animation-iteration-count: infinite;
     animation-direction: alternate;
 }
+.arrowbottom{
+    width: 50px;
+}
 
 @keyframes arrowmov {
     0% {margin-top: -17px;}
     100% {margin-top: -10px}
-}
-.arrowbottom{
-    width: 50px;
-}
-.blue{
-    color: #00C7FB;
-}
-
-.flex{
-    display: flex;
-    gap: 4em;
 }
 
 .homebutton{
@@ -62,7 +73,7 @@ body{
     margin-left: 7%;
     width: 50%;
     font-size: calc(3rem + 1.5vw);
-    margin-top: 15vw;
+    margin-top: 11vw;
 }
 
 .mainimg{
@@ -74,34 +85,105 @@ body{
     width: 600px;
 }
 
-.navbar{
+
+/* Navbar */
+
+.logobtn{
+    margin-top: 1.4em;
+    margin-left: 2em;
+    background-color: transparent;
+    border: none;
+}
+
+.logobtnimg{
+    width: 8em;
+    opacity: 0.75;
+}
+
+.navbarwrapper{
+    width: 100%;
     display: flex;
+}
+
+.navbar{
+    width: 100%;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     flex-wrap: wrap;
-    gap: 5%;
-    margin: 0.5em 1% 0.5em 5%;
+    gap: 4%;
 }
 
-.navbarbutton{
-    background: none;
-	color: transparent;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+.navbar ul li{
+    position: relative;
 }
 
-.navbartext{
+.navbar ul li a{
+    display: block;
+    color: #BBBBBB;
+    text-align: center;
+    padding: 0 10 0 10;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.navbar .ddmenu{
+    position: absolute;
+    width: 10em;
+    left: 50%;
+    transform: translate(-50%, 0);
+    justify-content: center;
+    background-color: #121212;
+    display: none;
+}
+
+.navbar ul{
+    padding: 0;
+}
+
+.navbar ul li a.aMain.active + .ddmenu{
+    display: block;
+}
+
+.navbar ul li a:hover,
+.navbar ul li a.active{
+    color: #00C7FB;
+    transition: all 0.3s ease;
+}
+
+
+.navbar .ddmenu ul li a{
+    text-align: center;
+}
+
+.ddmenu ul li{
+    width: 100%;
+    border: #00C7FB solid;
+}
+
+/* Style Deelonderwerpen */
+
+.poster
+{
+    background-image: url(images/posterbanner.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
+@keyframes backgroundmov {
+    0% {background-position-x: -10vw;}
+    100% {background-position-x: -20vw;}
+}
+
+.pagebuttonstext2{
     font: inherit;
+    font-size: 3em;
     color: #BBBBBB;
     text-decoration: none;
     text-transform: uppercase;
-    transition: 0.15s;
-}
-
-.navbartext:hover{
-    transition: 0.15s;
-    color: #00C7FB;
 }
 
 .pagebuttons{
@@ -162,18 +244,6 @@ body{
     box-shadow: 0px 0px 8px 1px #00C7FB;
 }
 
-.poster
-{
-    background-image: url(images/posterbanner.jpg);
-    background-size: cover;
-    background-position-y: center;
-}
-
-@keyframes backgroundmov {
-    0% {background-position-x: -10vw;}
-    100% {background-position-x: -20vw;}
-}
-
 .pagebuttonstext{
     font: inherit;
     font-size: 3em;
@@ -182,13 +252,7 @@ body{
     text-transform: uppercase;
 }
 
-.pagebuttonstext2{
-    font: inherit;
-    font-size: 3em;
-    color: #BBBBBB;
-    text-decoration: none;
-    text-transform: uppercase;
-}
+/* Style POCs */
 
 .documenttitle{
     text-align: center;
@@ -217,7 +281,4 @@ body{
     width: 50%;
     float: left;
     text-align: justify;
-}
-.uppercase{
-    text-transform: uppercase;
 }
