@@ -11,7 +11,7 @@ aMain.forEach(function(aMain_item){
 })
 
 document.addEventListener('click', function(){
-    if(event.target.matches(".aMain" && ".active" || ".aMain h3") == false){
+    if(event.target.matches(".aMain" && ".active") == false){
         CloseNavbar();
     }
 })

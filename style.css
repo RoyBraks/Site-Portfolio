@@ -87,11 +87,46 @@ body{
     width: 600px;
 }
 
+.pagebuttons{
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    display: flex;
+    gap: 4em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.pagebuttonsbutton{
+    background-image: linear-gradient(to left top, #121212, #262626);
+	color: #BBBBBB;
+	border: 3%;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 0.3rem;
+    width: 14em;
+	padding: 2.6em 1em;
+	font: inherit;
+    cursor: pointer;
+    font-size: 0.75em;
+}
+
+.pagebuttonsbutton:hover{
+    background-image: linear-gradient(to right bottom, #121212, #262626);
+    color: #00C7FB;
+    border-color: #00C7FB;
+    box-shadow: 0px 0px 8px 1px #00C7FB;
+}
+
 
 /* Navbar */
-
+hr{
+    border-color: #00C7FB; 
+    margin: 0;
+}
 .logobtn{
-    margin-top: 1.4em;
+    margin-top: 0.8em;
     margin-left: 2em;
     background-color: transparent;
     border: none;
@@ -127,10 +162,12 @@ body{
     display: block;
     color: #BBBBBB;
     text-align: center;
-    padding: 0 10 0 10;
+    padding: 10 10 10 10;
     text-transform: uppercase;
     transition: all 0.3s ease;
     cursor: pointer;
+    font-weight: 1000;
+    font-size: large;
 }
 .navbar .ddmenu{
     position: absolute;
@@ -166,39 +203,28 @@ body{
     border: #00C7FB solid;
 }
 
-.pagebuttons{
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    display: flex;
-    gap: 4em;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
-}
-
-.pagebuttonsbutton{
-    background-image: linear-gradient(to left top, #121212, #262626);
-	color: #BBBBBB;
-	border: 3%;
-    border-color: #c0c0c0;
-    border-style: solid;
-    border-radius: 60px;
-    border-width: 0.3rem;
-    width: 14em;
-	padding: 2.6em 1em;
-	font: inherit;
-    cursor: pointer;
-    font-size: 0.75em;
-}
-
-.pagebuttonsbutton:hover{
-    background-image: linear-gradient(to right bottom, #121212, #262626);
-    color: #00C7FB;
-    border-color: #00C7FB;
-    box-shadow: 0px 0px 8px 1px #00C7FB;
-}
-
 /* Style Deelonderwerpen */
+
+.brandguide
+{
+    background-image: url(images/Brandguide1.jpg);
+    background-size: cover;
+    background-position-y: 1000px;
+}
+
+.navigatiebar
+{
+    background-image: url(images/NavBar2.jpg);
+    background-size: cover;
+    background-position-y: 180px;
+}
+
+.infographic
+{
+    background-image: url(images/InfoGraphic.jpg);
+    background-size: cover;
+    background-position-y: 120px;
+}
 
 .poster
 {
@@ -226,6 +252,9 @@ body{
     display: flex;
     gap: 4em;
     flex-wrap: wrap;
+    width: 100%;
+    margin: 5% 0 0 0;
+    justify-content: center;
 }
 
 .pagebuttonsbutton2{
@@ -235,10 +264,10 @@ body{
     border-style: solid;
     border-radius: 60px;
     border-width: 0.3rem;
-    padding: 1.5em 70vw 1.5em 1em;
+    padding: 1.2em 70vw 1.2em 1em;
 	font: inherit;
     cursor: pointer;
-    margin-left: 10%;
+    width: 80vw;
 }
 
 .pagebuttonsbutton2:hover{
