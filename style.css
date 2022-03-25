@@ -316,3 +316,16 @@ hr{
     float: left;
     text-align: justify;
 }
+
+.iteraties{
+    display: flex;
+    gap: 4%;
+    justify-content: center;
+    margin: 0;
+}
+
+.iteratiesimg{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
