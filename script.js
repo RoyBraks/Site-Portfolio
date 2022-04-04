@@ -22,4 +22,23 @@ function CloseNavbar(){
     })  
 }
 
-//einde navigatiebar script
+// einde navigatiebar script
+
+// Script voor auto slideshow POC breakdowns 
+
+var imgIndex = 0;
+showSlide();
+
+function showSlide(){
+    let i;
+    let slideshow = document.getElementsByClassName("SlideShow");
+    for (i = 0; i <slideshow.length; i++){
+        slideshow[i].style.display = "none";
+    }
+    imgIndex++;
+    if (imgIndex > slideshow.length) {
+        imgIndex = 1;
+    }
+    slideshow[imgIndex-1].style.display = "block";
+    setTimeout(showSlide, 1000);
+}

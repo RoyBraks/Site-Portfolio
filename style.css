@@ -205,11 +205,31 @@ hr{
 
 /* Style Deelonderwerpen */
 
+.apastyle
+{
+    background-image: url(images/apastylebg.jpg);
+    background-size: cover;
+    background-position-y: 500px;
+}
 .brandguide
 {
-    background-image: url(images/Brandguide1.jpg);
+    background-image: url(images/BrandguideEnd.jpg);
     background-size: cover;
-    background-position-y: 1000px;
+    background-position-y: 300px;
+}
+
+.brandguideresearch
+{
+    background-image: url(images/BrandguideEnd.jpg);
+    background-size: cover;
+    background-position-y: 300px;
+}
+
+.mediaverkenningResearch
+{
+    background-image: url(images/MediaverkenningResearch.jpg);
+    background-size: cover;
+    background-position-y: 900px;
 }
 
 .navigatiebar
@@ -233,6 +253,13 @@ hr{
     background-position-y: center;
 }
 
+.slideshow
+{
+    background-image: url(images/Slideshow.jpg);
+    background-size: cover;
+    background-position-y: center;
+}
+
 @keyframes backgroundmov {
     0% {background-position-x: -10vw;}
     100% {background-position-x: -20vw;}
@@ -244,6 +271,7 @@ hr{
     color: #BBBBBB;
     text-decoration: none;
     text-transform: uppercase;
+    width: 100%;
 }
 
 .pagebuttons2{
@@ -264,10 +292,11 @@ hr{
     border-style: solid;
     border-radius: 60px;
     border-width: 0.3rem;
-    padding: 1.2em 70vw 1.2em 1em;
+    padding: 1.2em 0 1.2em 0;
 	font: inherit;
     cursor: pointer;
     width: 80vw;
+    float: left;
 }
 
 .pagebuttonsbutton2:hover{
@@ -328,4 +357,10 @@ hr{
     width: 100%;
     margin: 0;
     text-align: center;
+}
+
+.Slideshow-container{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
