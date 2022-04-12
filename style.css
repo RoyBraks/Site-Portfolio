@@ -260,6 +260,13 @@ hr{
     background-position-y: center;
 }
 
+.storytelling
+{
+    background-image: url(images/PosterStory1.jpg);
+    background-size: cover;
+    background-position-y: 1200px;
+}
+
 @keyframes backgroundmov {
     0% {background-position-x: -10vw;}
     100% {background-position-x: -20vw;}
