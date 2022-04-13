@@ -2,9 +2,10 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="style.css">
-        <title>Portfolio - Navbar</title>
+        <title>Portfolio - Steen Papier Schaar</title>
         <link rel="icon" type="image/x-icon" href="images/logofav.png">
         <script defer src="script.js"></script>
+        <script defer src="steenpapierschaar.js"></script>
     </head>
     <body>
         <div class="navbarwrapper">
@@ -173,48 +174,83 @@
         </div>
 
         <hr>
-
-        <div class="textdocumentatie">
-            <div class="documenttitle" style="margin: 1em 0 0 0;">NAVIGATIEBAR PORTFOLIO</div>
-                <img style="margin-top: 1em;"src="images/NavBar.jpg" width="100%">
-            <div class="flex textblock">
-                <div class="textimg">
-                    <img src="images/NavBarCode.jpg" width="100%">
+        
+        <div class="scorebord flex">
+            <div class="keuzeUser">
+                <img id="steenUser" src="images/steen.png" width="50%">
+                <img id="papierUser" src="images/papier.png" width="50%">
+                <img id="schaarUser" src="images/schaar.png" width="50%">
+            </div>
+            <div class="uitslag">
+                <div class="stand">
+                    <p id="UserScore" style="margin-right: 1em;"></p>
+                    <p>-</p>
+                    <p id="PCScore" style="margin-left: 1em;"></p>
                 </div>
-                <div class="texttext fontserif">
-                    Voor development wilde ik een betere navigatie maken voor de site. 
-                    Zo kun je makkelijker bij de inviduele POCs en ziet het er mooier uit. 
-                    Ik heb online gekeken hoe dat in z’n werk gaat. 
-                    Dit project in codepen heb ik gebruikt om te kijken hoe het werkt:
-                    <br>
-                    <br>
-                    <a style="color: #00C7FB;" target="blank" href="https://codepen.io/RajRajeshDn/pen/dyGZPMR">https://codepen.io/RajRajeshDn/pen/dyGZPMR</a>
-                    <br>
-                    <br>
-                    Na het kijken in de code is het na een paar uur gelukt om het te laten werken. 
-                    Ik wilde niet precies de code copy pasten, maar er een eigen draai aan geven. 
-                    Het belangrijkste is dat als de gebruiker klikt op aMain, dan veranderd de naam van de class naar aMain active. 
-                    Hierdoor wordt de display in de style veranderd van none naar block. Hierdoor wordt de submenu zichtbaar. 
-                    Ik weet nu hoe dat het werkt en nu zou ik het later nog een keer kunnen gebruiken. 
+                <div class="vs">
+                    VS
+                </div>
+                <div>
+                    <p id="result"></p>
                 </div>
             </div>
-            <img style="margin-top: 3em;"src="images/NavBar2.jpg" width="100%">
-            <div class="flex textblock">
-                
-                <div class="texttext fontserif">
-                    Hierna ben ik begonnen met het verbeteren van de navigatiebalk. Het was hiervoor niet mogelijk om een submenu te sluiten door er buiten te klikken.
-                    Door wat hulp van Pim is dat uiteindelijk gelukt met behulp van deze bron:
-                    <br>
-                    <br>
-                    <a style="color: #00C7FB;" target="blank" href="https://techstacker.com/close-modal-click-outside-vanilla-javascript/#javascript-detect-all-clicks-on-document">https://techstacker.com/close-modal-click-outside-vanilla-javascript/#javascript-detect-all-clicks-on-document</a>
-                    <br>
-                    <br>
-                    Door deze extra functie is de site gebruikersvriendelijker. 
-                </div>
-                <div class="textimg">
-                    <img src="images/NavBar3.jpg" width="100%">
-                </div>
+            <div class="keuzePC">
+                <img id="steenPC" src="images/steen.png" width="50%" style="transform: scaleX(-1);"> 
+                <img id="papierPC" src="images/papier.png" width="50%" style="transform: scaleX(-1);">
+                <img id="schaarPC" src="images/schaar.png" width="50%" style="transform: scaleX(-1);">
+            </div>
+        </div>
+        <div class="flex playerCat">
+            <p>
+                JIJ
+            </p>
+            <p>
+                CPU
+            </p>
+        </div>
 
+        <div class="pagebuttons">
+            <div class="pagebuttonsmain">
+                <button id="steen">
+                    STEEN
+                </button>
+            </div>
+            <div class="pagebuttonsmain">
+                <button id="papier">
+                    PAPIER
+                </button>
+            </div>
+            <div class="pagebuttonsmain">
+                <button id="schaar">
+                    SCHAAR
+                </button>
+            </div>
+        </div>
+        <div class="textdocumentatie">
+            <div class="documenttitle" style="margin: 1em 0 0 0;">STEEN PAPIER SCHAAR</div>
+            <div class="flex textblock">
+                <div class="textimg">
+                    <img src="images/steenpapierschaarcode1.jpg" width="40%">
+                    <img src="images/steenpapierschaarcode2.jpg" width="40%">
+                </div>
+                <div class="texttext fontserif">
+                    Het spel steen papier schaar vond ik wel een leuke toevoeging aan de site. Het is leuk om te maken en het is ook een goede manier om
+                    javascript te leren vind ik. Het idee was ook om het spel er mooi uit te laten zien door middel van het design van de site te gebruiken.
+                    <br>
+                    <br>
+                    Eerst heb ik nagedacht over hoe ik het spel het meest efficiënt kan maken. Naar mijn mening kan ik hievoor het beste switch gebruiken.
+                    Ook heb ik een aantal variabelen toegevoegd over de keuze van de gebruiker en een random generator die kiest tussen 0, 1 of 2. 
+                    Nadat het spel werkte heb ik plaatjes en een scorebord toegevoegd. 
+                </div>
+            </div>
+            <div class="documenttitle" style="margin: 1em 0 0 0;">ITTERATIES</div>
+            <div class="iteraties">
+                <div class="flex textblock">
+                    <div class="flex textimg">
+                        <img src="images/steenpapierschaarv1.jpg" width="100%">
+                        <img src="images/steenpapierschaarv2.jpg" width="100%">
+                    </div>
+                </div>
             </div>
         </div>
     </body>

@@ -257,14 +257,21 @@ hr{
 {
     background-image: url(images/Slideshow.jpg);
     background-size: cover;
-    background-position-y: center;
+    background-position-y: 50px;
 }
 
 .storytelling
 {
-    background-image: url(images/PosterStory1.jpg);
+    background-image: url(images/PosterStory2.jpg);
     background-size: cover;
-    background-position-y: 1200px;
+    background-position-y: 1400px;
+}
+
+.steenpapierschaar
+{
+    background-image: url(images/steenpapierschaarv2.jpg);
+    background-size: cover;
+    background-position-y: 1400px;
 }
 
 @keyframes backgroundmov {
@@ -288,7 +295,7 @@ hr{
     gap: 4em;
     flex-wrap: wrap;
     width: 100%;
-    margin: 5% 0 0 0;
+    margin: 5% 0 5% 0;
     justify-content: center;
 }
 
@@ -370,4 +377,108 @@ hr{
     margin-top: 1em;
     display: flex;
     justify-content: center;
+}
+
+/* Steen Papier Schaar */
+
+#steen, #papier, #schaar{
+    background-image: linear-gradient(to left top, #121212, #262626);
+	color: #BBBBBB;
+	border: 3%;
+    border-color: #c0c0c0;
+    border-style: solid;
+    border-radius: 60px;
+    border-width: 0.3rem;
+    width: 14em;
+	padding: 2.6em 1em;
+	font: inherit;
+    cursor: pointer;
+    font-size: 2em;
+}
+
+#steen:hover, #papier:hover, #schaar:hover{
+    background-image: linear-gradient(to right bottom, #121212, #262626);
+    color: #00C7FB;
+    border-color: #00C7FB;
+    box-shadow: 0px 0px 8px 1px #00C7FB;
+}
+
+.vs{
+    font-size: 4em;
+    margin-top: 0;
+    width: 100%;
+}
+
+.uitslag{
+    text-align: center;
+    width: 33%;
+    justify-content: baseline;
+    margin-top: 3em;
+}
+
+.stand{
+    margin-bottom: -20;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.keuzeUser{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 33%;
+}
+.keuzePC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 33%;
+}
+
+#steenUser{
+    display: none;
+    margin-left: 70%;
+}
+#papierUser{
+    display: none;
+    margin-left: 70%;
+}
+#schaarUser{
+    display: none;
+    margin-left: 70%;
+}
+#steenPC{
+    display: none;
+    margin-right: 70%;
+}
+#papierPC{
+    display: none;
+    margin-right: 70%;
+}
+#schaarPC{
+    display: none;
+    margin-right: 70%;
+}
+
+#result{
+    font-variant: small-caps;
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.scorebord{
+    height: 40%;
+}
+
+.playerCat{
+    justify-content: center;
+}
+
+.playerCat p{
+    text-align: center;
+    margin: 0 10em;
+    font-size: 2.3em;
 }
