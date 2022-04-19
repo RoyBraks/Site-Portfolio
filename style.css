@@ -7,8 +7,25 @@
 *{
     list-style: none;
     text-decoration: none;
+    scrollbar-color: white;
 }
 
+*::-webkit-scrollbar{
+    width: 10px;
+    position: relative;
+    color: #00C7FB;
+}
+
+*::-webkit-scrollbar-track{
+    background-color: #202020;
+}
+
+*::-webkit-scrollbar-thumb{
+    border-color: #00C7FB;
+    border-width: 2px;
+    border-radius: 50px;
+    border-style: solid;
+}
 .uppercase{
     text-transform: uppercase;
 }
@@ -22,6 +39,7 @@ body{
     background-repeat: no-repeat;
     margin: 0 auto;
     overflow-x: hidden;
+
 }
 
 .blue{
@@ -244,6 +262,13 @@ hr{
     background-image: url(images/InfoGraphic.jpg);
     background-size: cover;
     background-position-y: 120px;
+}
+
+.mediastrategie
+{
+    background-image: url(images/YouTube\ Banner\ Test\ 1.jpg);
+    background-size: cover;
+    background-position-y: -230px;
 }
 
 .poster
