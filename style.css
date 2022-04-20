@@ -243,6 +243,13 @@ hr{
     background-position-y: 300px;
 }
 
+.colors
+{
+    background-image: url(images/colorpaletbraxx.png);
+    background-size: cover;
+    background-position-y: 700px;
+}
+
 .mediaverkenningResearch
 {
     background-image: url(images/MediaverkenningResearch.jpg);
