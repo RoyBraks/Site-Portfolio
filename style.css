@@ -250,6 +250,12 @@ hr{
     background-position-y: 700px;
 }
 
+.fotografie
+{
+    background-image: url(images/chefstuutmedia.jpg);
+    background-size: cover;
+    background-position-y: 550px;
+}
 .mediaverkenningResearch
 {
     background-image: url(images/MediaverkenningResearch.jpg);
