@@ -270,6 +270,12 @@ hr{
     background-size: cover;
     background-position-y: 900px;
 }
+.interview
+{
+    background-image: url(images/hannahInterview.jpg);
+    background-size: cover;
+    background-position-y: 900px;
+}
 
 .navigatiebar
 {
@@ -318,6 +324,13 @@ hr{
     background-image: url(images/steenpapierschaarv2.jpg);
     background-size: cover;
     background-position-y: 1400px;
+}
+
+.vrclipCommunicatie
+{
+    background-image: url(images/vrclipcomm.jpg);
+    background-size: cover;
+    background-position-y: 1200px;
 }
 
 @keyframes backgroundmov {
