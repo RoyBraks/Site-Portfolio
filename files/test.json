@@ -1,0 +1,77 @@
+[
+    {
+        "age": 23,
+        "name": "Elena Burke",
+        "gender": "female",
+        "email": "elenaburke@mantro.com",
+        "tags": [
+            "ex",
+            "est",
+            "proident",
+            "adipisicing",
+            "qui",
+            "consectetur",
+            "ex"
+        ]
+    },
+    {
+        "age": 36,
+        "name": "Preston Ochoa",
+        "gender": "male",
+        "email": "prestonochoa@mantro.com",
+        "tags": [
+            "fugiat",
+            "et",
+            "velit",
+            "fugiat",
+            "sit",
+            "nulla",
+            "eiusmod"
+        ]
+    },
+    {
+        "age": 26,
+        "name": "Witt Oneil",
+        "gender": "male",
+        "email": "wittoneil@mantro.com",
+        "tags": [
+            "dolor",
+            "adipisicing",
+            "aute",
+            "culpa",
+            "deserunt",
+            "minim",
+            "minim"
+        ]
+    },
+    {
+        "age": 30,
+        "name": "Deana Ortega",
+        "gender": "female",
+        "email": "deanaortega@mantro.com",
+        "tags": [
+            "commodo",
+            "et",
+            "velit",
+            "nulla",
+            "sit",
+            "sint",
+            "veniam"
+        ]
+    },
+    {
+        "age": 35,
+        "name": "Montoya Pate",
+        "gender": "male",
+        "email": "montoyapate@mantro.com",
+        "tags": [
+            "duis",
+            "exercitation",
+            "dolore",
+            "elit",
+            "adipisicing",
+            "quis",
+            "voluptate"
+        ]
+    }
+]

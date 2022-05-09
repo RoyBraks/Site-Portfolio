@@ -541,3 +541,11 @@ hr{
     margin: 0 10em;
     font-size: 2.3em;
 }
+
+/* JSON read */
+
+#jsonwrite{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
