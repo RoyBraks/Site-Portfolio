@@ -333,6 +333,12 @@ hr{
     background-position-y: 1400px;
 }
 
+.usertestport
+{
+    background-image: url(images/NavBar.jpg);
+    background-size: cover;
+    background-position-y: 70px;
+}
 .vrclipCommunicatie
 {
     background-image: url(images/vrclipcomm.jpg);
