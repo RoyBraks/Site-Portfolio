@@ -403,6 +403,16 @@ hr{
 
 /* Style POCs */
 
+#apibox{
+    border-style: solid;
+    border-color: #00C7FB;
+    border-width: 5px;
+    border-radius: 50px;
+    height: 300px;
+    margin: 0;
+    padding: 0;
+}
+
 .documenttitle{
     text-align: center;
     width: 100%;
