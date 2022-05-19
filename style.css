@@ -298,6 +298,12 @@ hr{
     background-position-y: 120px;
 }
 
+.apipoc
+{
+    background-image: url(images/apiss.jpg);
+    background-size: cover;
+    background-position-y: 120px;
+}
 .mediastrategie
 {
     background-image: url(images/HANNAH\ YouTube\ 2.jpg);
@@ -344,6 +350,20 @@ hr{
     background-image: url(images/vrclipcomm.jpg);
     background-size: cover;
     background-position-y: 1200px;
+}
+
+.vrhannah
+{
+    background-image: url(images/vrhannaheind.jpg);
+    background-size: cover;
+    background-position-y: 200px;
+}
+
+.vrhannahtest
+{
+    background-image: url(images/vrhannaheind.jpg);
+    background-size: cover;
+    background-position-y: 700px;
 }
 
 @keyframes backgroundmov {
