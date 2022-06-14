@@ -230,6 +230,13 @@ hr{
     background-size: cover;
     background-position-y: 500px;
 }
+
+.sprintx
+{
+    background-image: url(images/sprintxps.jpg);
+    background-size: cover;
+    background-position-y: 470px;
+}
 .brandguide
 {
     background-image: url(images/BrandguideEnd.jpg);
@@ -261,6 +268,20 @@ hr{
 .fotografie
 {
     background-image: url(images/chefstuutmedia.jpg);
+    background-size: cover;
+    background-position-y: 550px;
+}
+
+.fotografie2
+{
+    background-image: url(images/Foto_samen_1.jpg);
+    background-size: cover;
+    background-position-y: 550px;
+}
+
+.hannahfeedback
+{
+    background-image: url(images/feedback_to_creatives.png);
     background-size: cover;
     background-position-y: 550px;
 }
