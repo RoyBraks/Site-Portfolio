@@ -279,6 +279,13 @@ hr{
     background-position-y: 550px;
 }
 
+.fotografie3
+{
+    background-image: url(images/Foto_5_warmer.jpg);
+    background-size: cover;
+    background-position-y: 700px;
+}
+
 .hannahfeedback
 {
     background-image: url(images/feedback_to_creatives.png);
